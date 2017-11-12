@@ -12,15 +12,12 @@
   <script type="text/javascript" src="{{ url_for('static', filename='LaTeXMathML.min.js') }}"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='shortcut icon' href="{{ url_for('static', filename='favicon.ico') }}" type='image/x-icon'/>
-  <style type="text/css">
-   img { mix-blend-mode: multiply; }
-  </style>
   <meta property="og:author" content="{{ config.author }}" />
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="{{ page.description }}" />
   <meta property="og:url" content="{{ request.path }}" />
-  <meta property="og:image" content="{{ url_for('static', filename='img/athena.png') }}" />
+  <meta property="og:image" content="{{ url_for('static', filename='img/moon.png') }}" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="{{ page.title }}" />
   <meta name="twitter:description" content="{{ page.description }}" />
@@ -48,7 +45,8 @@
   </div>
   <div class="thefooter">
     <p>{{ config.footer }}
-    <br><br>Copyright, <i>2016</i></p>
+      <br><br>&copy; {{ config.year }} {{ config.author }}
+    </p>
   </div> <!-- footer end -->
 </body>
 </html>

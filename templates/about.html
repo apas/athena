@@ -7,9 +7,6 @@
   <script type="text/javascript" src="{{ url_for('static', filename='jquery-1.12.4.min.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='resources.min.js') }}"></script>
   <link rel='shortcut icon' href="{{ url_for('static', filename='favicon.ico') }}" type='image/x-icon'/>
-  <style type="text/css">
-   img { mix-blend-mode: multiply; }
-  </style>
 </head>
 <body>
  <div class="thearticle">
@@ -22,15 +19,16 @@
         <a href="{{ url_for("recent_feed") }}">subscribe</a>
       </span>
     </p>
-    <section>
-      <p>This is a sample about page.</p>
-    </section>
+
+    {{ page.html|safe }}
+
   </article>
   </div>
 
   <div class="thefooter">
     <p>{{ config.footer }}
-      <br><br>Copyright, <i>2016</i></p>
+      <br><br>&copy; {{ config.year }} {{ config.author }}
+    </p>
   </div> <!-- footer end -->
 </body>
 </html>
