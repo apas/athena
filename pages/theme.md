@@ -4,6 +4,47 @@ date: 2017-11-17
 description: Website Theme & CSS
 ...
 
+# Plum
+> A mild light-on-dark theme with monochrome colours + a pale pink highlight
+> (although most pastels would probably work). Based on
+> [Athena](https://github.com/apas/athena)'s modified version of
+> [Tufte CSS](https://edwardtufte.github.io/tufte-css/).
+
+* * *
+
+# Colours
+<table style="text-align: left;">
+    <tbody>
+        <tr>
+        <td style="background-color: #333; color: #ebebeb; padding: 1em;">
+            Background <code style="float: right;">#333</code>
+        </td>
+        </tr>
+        <tr>
+        <td style="background-color: #e1b4b6; color: #333; padding: 1em;">
+            Accent <code style="float: right;">#e1b4b6</code>
+        </td>
+        </tr>
+        <tr>
+        <td style="background-color: #ebebeb; color: #333; padding: 1em;">
+            Primary Text <code style="float: right">#ebebeb</code>
+        </td>
+        </tr>
+        <tr>
+        <td style="background-color: #aaa; color: #333; padding: 1em;">
+            Secondary Text <code style="float: right;">#aaa</code>
+        </td>
+        </tr>
+        <tr>
+        <td style="background-color: #222; color: #ebebeb; padding: 1em;">
+            Code Background <code style="float: right;">#222</code>
+        </td>
+        </tr>
+    </tbody>
+</table>
+
+* * *
+
 # Header
 # [Link Header](#)
 ## Header
@@ -13,8 +54,15 @@ description: Website Theme & CSS
 #### Header
 #### [Link Header](#)
 
+* * *
+
+# Subtitles
+
 > Subtitle with __bold__, _italics_, and a [link](#).
 
+* * *
+
+# Section Dividers
 
 * * *
 
