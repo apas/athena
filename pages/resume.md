@@ -6,6 +6,20 @@ description: An extended résumé
 
 # Experience
 
+## Amazon
+
+|                     |                           |
+|:--------------------|:--------------------------|
+| _Timespan_          | September - November 2017 |
+| _Position_          | SDE Intern                |
+| _Associated Skills_ | Python                    |
+|                     | Java                      |
+|                     | AWS (DynamoDB, Lambda)    |
+|                     | Git                       |
+
+Built the full stack of an internal website as part of an individual intern
+project.
+
 ## Catalant (Formerly HourlyNerd)
 
 |                     |                         |
