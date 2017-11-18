@@ -3,6 +3,5 @@ env/
 build/
 *.pyc
 *.log
-config.py
 pages/all.bib
 .DS_Store
