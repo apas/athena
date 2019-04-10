@@ -50,13 +50,13 @@ the Python backend and the Jinja template engine.
 
 ### Running athena
 
-1. `python athena.py`
+1. `./env/bin/python3 athena.py`
 
 athena will start a Flask server at `127.0.0.1:5000`.
 
 ### Building static HTML
 
-1. `python athena.py build`
+1. `./env/bin/python3 athena.py build`
 
 A new `build/` directory will be created (it's automatically ignored by git.)
 For subsequent builds, athena rebuilds only the updated files, rather than the
