@@ -34,3 +34,43 @@ $(window).on("load", function () {
     $(this).replaceWith("<figcaption>"+$(this).text()+"</figcaption>");
   });
 });
+
+$(window).on("load", function () {
+  if ($("figure").length > 0) {
+    console.log("Pandoc 2.x -- figcaption there")
+
+    var array = $("figcaption").each(function () {
+      return $("figcaption").text();
+    });
+    for (var i = array.length - 1; i >= 0; i--) {
+      array[i] = $(array[i]).text();
+    }
+    // console.log(array);
+
+    $("figure").map(function (i, html) {
+      $("figcaption").remove();
+      $(this).prepend("<span class='marginnote'>" + array[i] + "</span>");
+      $(this).prepend("<input type='checkbox' id='mn-exports-imports' \
+       class='margin-toggle'>");
+      $(this).prepend("<label for='mn-exports-imports' \
+        class='margin-toggle'></label>");
+    })
+  }
+
+  if ($(".figure").length > 0) {
+    console.log("Pandoc 1.x -- no figcaption")
+
+    var array2 = $("figcaption").each(function () {
+      return $("figcaption").text();
+    });
+    for (var i = array2.length - 1; i >= 0; i--) {
+      array2[i] = $(array2[i]).text();
+    }
+    // console.log(array2);
+
+    $(".figure").each(function (i, html) {
+      $(this).prepend("<span class='marginnote'>" + array2[i] + "</span>");
+    })
+    $("article > figcaption").remove();
+  }
+})

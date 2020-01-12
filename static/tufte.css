@@ -260,10 +260,15 @@ img.mached {
     padding-right: 1em;
 }
 
-figure {
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-}
+figure { padding: 0;
+         border: 0;
+         font-size: 100%;
+         font: inherit;
+         vertical-align: baseline;
+         max-width: 55%;
+         -webkit-margin-start: 0;
+         -webkit-margin-end: 0;
+         margin: 0 0 3em 0; }
 
 figcaption {
     float: right;
@@ -374,18 +379,13 @@ div.sourceCode pre {
     width: 100%;
 }
 
-@media screen and (max-width: 760px) {
-    p, footer, pre, pre.code, table, div.sourceCode, ol, ul, div.figure,
-    .footnotes p {
-        width: 90%;
-    }
-    blockquote p, blockquote footer {
-        width: 90%;
-    }
-    table.table-wrapper {
-        width: 90%;
-    }
-}
+@media screen and (max-width: 760px) { p, footer, pre, pre.code, table,
+                                        div.sourceCode, ol, ul,
+                                      div.figure, .footnotes p { width:
+                                       90%; }
+                                       blockquote p, blockquote footer { width: 90%; }
+                                       table.table-wrapper { width: 90%; }
+                                       figure { max-width: 90%; }}
 
 .sans {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
